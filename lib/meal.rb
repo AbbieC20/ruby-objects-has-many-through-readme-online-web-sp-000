@@ -1,3 +1,4 @@
+#will join the customer & waiter together
 class Meal
   attr_accessor :waiter, :customer, :total, :tip
 
@@ -17,4 +18,3 @@ class Meal
   end
 
 end
-#will join the customer & waiter together
