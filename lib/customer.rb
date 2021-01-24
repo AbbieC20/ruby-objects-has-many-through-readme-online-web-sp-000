@@ -7,8 +7,7 @@ class Customer
     @name = name
     @age = age
     @@all << self
-  end
-  #created with the customer's name & age
+  end   #created with the customer's name & age
 
   def self.all
     @@all
@@ -16,16 +15,14 @@ class Customer
 
   def new_meal(waiter, total, tip=0)
     Meal.new(waiter, self, total, tip)
-  end
-  #create a meal, using the Class
+  end    #create a meal, using the Class
 
   def meals
     Meal.all.select do |meal|
       meal.customer == self
     end
-  end
-  #iterating through every instance of meal and returning only those
-  #where the meal's customer is the customer in question
+  end   #iterating through every instance of meal and returning only those
+        #where the meal's customer is the customer in question
 
   def waiters
     meals.map do |meal|
