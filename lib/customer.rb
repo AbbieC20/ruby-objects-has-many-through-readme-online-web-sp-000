@@ -8,6 +8,7 @@ class Customer
     @age = age
     @@all << self
   end
+  #created with the customer's name & age
 
   def self.all
     @@all
