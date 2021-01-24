@@ -14,7 +14,7 @@ class Waiter
   end
   #created with the waiter's name & experience
 
-  def new_meal(waiter, total, tip=0)
+  def new_meal(customer, total, tip=0)
     Meal.new(self, customer, total, tip)
   end
   #create a meal, using the Class
