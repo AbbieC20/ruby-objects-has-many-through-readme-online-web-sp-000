@@ -10,12 +10,11 @@ class Meal
     @tip = tip
     @@all << self
   end
-  #tip defaults to 0 
+  #tip defaults to 0
 
   def self.all
     @@all
   end
 
 end
-
 #will join the customer & waiter together
