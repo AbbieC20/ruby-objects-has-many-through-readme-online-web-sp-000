@@ -12,5 +12,6 @@ class Waiter
   def self.all
     @@all
   end
+  #created with the waiter's name & experience
 
 end
