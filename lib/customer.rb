@@ -27,4 +27,11 @@ class Customer
   #iterating through every instance of meal and returning only those
   #where the meal's customer is the customer in question
 
+  def waiters
+    meals.map do |meal|
+      meal.waiter
+    end
+  end
+  #iterate through customer's meals to retrieve information about waiters
+
 end
