@@ -19,4 +19,12 @@ class Customer
   end
   #create a meal, using the Class
 
+  def meals
+    Meal.all.select do |meal|
+      meal.customer == self
+    end
+  end
+  #iterating through every instance of meal and returning only those
+  #where the meal's customer is the customer in question
+
 end
