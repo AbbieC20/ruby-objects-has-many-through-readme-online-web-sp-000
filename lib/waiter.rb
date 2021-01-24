@@ -35,5 +35,6 @@ class Waiter
 
     best_tipped_meal.customer
   end
+  #using meals, we can order which customers are the best tipper
 
 end
